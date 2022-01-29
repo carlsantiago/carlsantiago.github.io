@@ -1,10 +1,10 @@
 import React from "react";
 
-function Buttons() {
+function Buttons({ currentPage, handlePageChange }) {
   return (
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-center fixed-bottom">
       <div className="menu my-5 d-flex justify-content-between">
-        <a href="/">
+        <a href="#home" onClick={() => handlePageChange("Home")}>
           <button
             type="button"
             className="btn btn-outline-light rounded-pill"
@@ -13,7 +13,7 @@ function Buttons() {
             About
           </button>
         </a>
-        <a href="/projects">
+        <a href="#projects" onClick={() => handlePageChange("Projects")}>
           <button
             type="button"
             className="btn btn-outline-light rounded-pill"
@@ -22,7 +22,7 @@ function Buttons() {
             Projects
           </button>
         </a>
-        <a href="/skills">
+        <a href="#skills" onClick={() => handlePageChange("Skills")}>
           <button
             type="button"
             className="btn btn-outline-light rounded-pill"
@@ -31,7 +31,7 @@ function Buttons() {
             Skills
           </button>
         </a>
-        <a href="/contact">
+        <a href="#contact" onClick={() => handlePageChange("Contact")}>
           <button
             type="button"
             className="btn btn-outline-light rounded-pill"

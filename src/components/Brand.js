@@ -1,6 +1,6 @@
 import React from "react";
 
-function Nav() {
+function Brand() {
   return (
     <nav className="navbar fixed-top navbar-light bg-transparent">
       <div className="container-fluid">
@@ -12,4 +12,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Brand;

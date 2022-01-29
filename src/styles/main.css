@@ -69,6 +69,12 @@ a:hover {
   font-weight: lighter !important;
   margin: 5px;
 }
+
+/* .active {
+  color: #0000;
+  background-color: white;
+  border-color: white; */
+/* } */
 /* 
 .cardDesc {
   height: 200px;
