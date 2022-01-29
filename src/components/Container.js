@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Home from "./pages/Home";
 import Nav from "./Nav";
+
 import "../styles/main.css";
 
 export default function Container() {
@@ -8,7 +9,11 @@ export default function Container() {
 
   const renderPage = () => {
     if (currentPage === "Home") {
-      return <Home />;
+      return (
+        <div className="h-100">
+          <Home />
+        </div>
+      );
     }
   };
 
@@ -16,6 +21,7 @@ export default function Container() {
   return (
     <div className="container">
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+
       {renderPage()}
     </div>
   );
