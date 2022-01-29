@@ -2,8 +2,8 @@ import React from "react";
 
 function Buttons({ currentPage, handlePageChange }) {
   return (
-    <div className="d-flex justify-content-center fixed-bottom">
-      <div className="menu my-5 d-flex justify-content-between">
+    <div className="d-flex justify-content-center">
+      <div className="my-5 d-flex justify-content-between">
         <a href="#home" onClick={() => handlePageChange("Home")}>
           <button
             type="button"

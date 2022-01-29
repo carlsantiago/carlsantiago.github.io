@@ -2,10 +2,10 @@ import React from "react";
 import Brand from "../Brand";
 export default function Home() {
   return (
-    <div className="h-100">
+    <div>
       <Brand />
 
-      <div className="d-flex flex-column justify-content-center align-items-center h-100">
+      <div>
         <div className="row">
           <img src="/images/carl.png" alt="Carl Santiago" id="avatar" />
           <p>

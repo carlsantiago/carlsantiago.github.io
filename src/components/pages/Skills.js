@@ -1,5 +1,9 @@
 import React from "react";
-
+import Brand from "../Brand";
 export default function Skills() {
-  return <div></div>;
+  return (
+    <div>
+      <Brand />
+    </div>
+  );
 }
