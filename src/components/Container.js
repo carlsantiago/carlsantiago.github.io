@@ -31,7 +31,7 @@ export default function Container() {
       <Brand />
       <div className="container d-flex flex-column justify-content-center align-items-center">
         {renderPage()}
-        <div className="row">
+        <div className="row ">
           <Buttons
             currentPage={currentPage}
             handlePageChange={handlePageChange}

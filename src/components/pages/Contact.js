@@ -18,7 +18,12 @@ export default function Contact() {
             className="btn btn-outline-light rounded-pill text-white"
             title="Email me"
           >
-            <a href="mailto:4518gg@gmail.com" title="Email me" target="_blank">
+            <a
+              href="mailto:4518gg@gmail.com"
+              title="Email me"
+              target="_blank"
+              rel="noreferrer"
+            >
               4518gg@gmail.com
             </a>
           </button>

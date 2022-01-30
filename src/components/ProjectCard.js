@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
-function Card({ projects }) {
+function ProjectCard({ projects }) {
   return (
     <div className="row justify-content-center align-items-center">
       {projects.map((project) => (
@@ -56,4 +56,4 @@ function Card({ projects }) {
   );
 }
 
-export default Card;
+export default ProjectCard;

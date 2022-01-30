@@ -39,7 +39,7 @@ const projects = [
     src: "ecommerce.png",
     description: "CRUD app for an e-commerce back end database.",
     github: "https://github.com/carlsantiago/eCommerce-back-end",
-    deployLink: "https://youtu.be/3m7y8xxVHWs",
+    deploy: "https://youtu.be/3m7y8xxVHWs",
     techUsed: "Express, mySQL, Sequelize, JavaScript",
   },
 ];
