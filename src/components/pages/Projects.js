@@ -1,9 +1,11 @@
 import React from "react";
-import Brand from "../Brand";
+import Card from "../Card";
+import projects from "./../../projects";
+
 export default function Projects() {
   return (
-    <div>
-      <Brand />
+    <div className="projectContainer">
+      <Card projects={projects} />
     </div>
   );
 }

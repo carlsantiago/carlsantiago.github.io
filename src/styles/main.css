@@ -4,8 +4,9 @@
 
 #root {
   width: 100vw;
+  height: 100vh;
   display: table-cell;
-  background-image: url("./../../public/images/bg.svg") !important;
+  background-image: url("../images/bg.svg") !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -52,11 +53,8 @@ a:hover {
   padding: 0;
 }
 .container p {
-  width: 32em;
   line-height: 2em;
-  padding-left: 3em;
   font-family: "Jura", sans-serif;
-  font-size: 22px;
   color: rgb(255, 255, 255);
   text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
     10px 20px 5px rgba(0, 0, 0, 0.05), -5px 20px 5px rgba(0, 0, 0, 0.05);
@@ -66,24 +64,32 @@ a:hover {
   font-weight: lighter !important;
   margin: 5px;
 }
+.projectCard {
+  height: 100%;
+}
+.projectContainer {
+  width: 100vw;
+  padding-top: 8rem;
+}
+.cardDesc {
+}
 
+.about p {
+  font-size: 22px;
+}
 /* .active {
   color: #0000;
   background-color: white;
   border-color: white; */
 /* } */
 /* 
-.cardDesc {
-  height: 200px;
-}
+
 
  */
 /* 
 
 
-.projectCard {
-  width: 300px;
-}
+
 
 .skillCard {
   width: 300px;
@@ -94,10 +100,7 @@ a:hover {
   padding-top: 10rem;
 }
 
-.projectContainer {
-  width: 80vw;
-  padding-top: 10rem;
-}
+
 
 .contactContainer {
   width: 80vw;
