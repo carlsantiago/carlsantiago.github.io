@@ -4,7 +4,7 @@ import projects from "./../../projects";
 
 export default function Projects() {
   return (
-    <div className="projectContainer">
+    <div className="d-flex h-100 align-items-center">
       <ProjectCard projects={projects} />
     </div>
   );

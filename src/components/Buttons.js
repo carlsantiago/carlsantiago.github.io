@@ -2,7 +2,7 @@ import React from "react";
 
 function Buttons({ currentPage, handlePageChange }) {
   return (
-    <div className="d-flex justify-content-center">
+    <div className="position-absolute bottom-0 start-50 translate-middle-x">
       <div className="my-5 d-flex justify-content-between">
         <a href="#home" onClick={() => handlePageChange("Home")}>
           <button

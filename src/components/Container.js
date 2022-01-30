@@ -27,17 +27,12 @@ export default function Container() {
 
   const handlePageChange = (page) => setCurrentPage(page);
   return (
-    <div>
+    <div className="container h-100 d-flex justify-content-center">
       <Brand />
-      <div className="container d-flex flex-column justify-content-center align-items-center">
-        {renderPage()}
-        <div className="row ">
-          <Buttons
-            currentPage={currentPage}
-            handlePageChange={handlePageChange}
-          />
-        </div>
-      </div>
+
+      {renderPage()}
+
+      <Buttons currentPage={currentPage} handlePageChange={handlePageChange} />
     </div>
   );
 }

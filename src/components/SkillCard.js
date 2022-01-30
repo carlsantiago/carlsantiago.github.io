@@ -3,7 +3,7 @@ var Accordion = require("react-bootstrap").Accordion;
 
 function SkillCard({ skills }) {
   return (
-    <div>
+    <div className="d-flex justify-content-center h-100 align-items-center">
       <Accordion defaultActiveKey="0" className="bg-dark" flush>
         {skills.map((x) => (
           <Accordion.Item eventKey={x.id}>

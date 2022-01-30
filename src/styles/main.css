@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap");
-
 #root {
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
   display: table-cell;
-  background-image: url("../images/bg.svg") !important;
+  background-image: url("../images/bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -26,11 +25,6 @@ a:hover {
   color: inherit;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
-}
-
 #brand {
   font-family: "Comforter Brush", cursive;
   font-size: 26px;
@@ -42,15 +36,12 @@ a:hover {
 }
 
 #avatar {
-  width: 200px;
-  height: 280px;
+  width: 220px;
+  height: 250px;
   object-fit: cover;
   filter: grayscale(50%) contrast(120%);
   box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
-  display: block;
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-  margin-top: -10px;
-  padding: 0;
 }
 .container .projectsCard p {
   line-height: 2em;
@@ -64,27 +55,13 @@ a:hover {
   font-weight: lighter !important;
   margin: 5px;
 }
-.projectCard {
-  height: 100%;
-}
-.projectContainer {
-  width: 100vw;
-  padding-top: 8rem;
-}
-.cardDesc {
-}
 
 .about p {
   color: rgb(223, 221, 221);
   font-size: 22px;
+  padding-left: 30px;
 }
 
-.projectContainer img {
-  max-height: 25em;
-}
-
-.projectContainer {
-}
 /* .active {
   color: #0000;
   background-color: white;
@@ -114,3 +91,7 @@ a:hover {
   width: 80vw;
   padding-top: 20rem;
 } */
+
+.asd {
+  width: 300px;
+}
