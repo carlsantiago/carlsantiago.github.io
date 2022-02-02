@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6d87f2da.css",
+    "main.js": "/static/js/main.d9930da1.js",
+    "static/js/787.7972dc65.chunk.js": "/static/js/787.7972dc65.chunk.js",
+    "static/media/Career HeadStart.png": "/static/media/Career HeadStart.82614a4e88e5f4450e88.png",
+    "static/media/E-commerce back end.png": "/static/media/E-commerce back end.278d031d19e7e042d595.png",
+    "static/media/Day Maker.png": "/static/media/Day Maker.8970edcff3cd2efe116e.png",
+    "static/media/Weather Dashboard.png": "/static/media/Weather Dashboard.565fd78a2ec7e69f7648.png",
+    "static/media/team.png": "/static/media/team.fa7acfdd532954acbd6b.png",
+    "static/media/carl.png": "/static/media/carl.27ac361b24104c69ebc0.png",
+    "static/media/quiz.png": "/static/media/quiz.ddc84a31688a3fb3d9cf.png",
+    "static/media/Tech Blog.png": "/static/media/Tech Blog.d8826ae417cdcdb38de4.png",
+    "static/media/ss1.png": "/static/media/ss1.9c9fb41e4359f41ffe07.png",
+    "static/media/Just Another Text Editor.png": "/static/media/Just Another Text Editor.c18e4eb22137e664e83d.png",
+    "static/media/note.png": "/static/media/note.af382947d05d08c12451.png",
+    "static/media/bg.svg": "/static/media/bg.e2be9fa92b2f6495c4c1.svg",
+    "index.html": "/index.html",
+    "main.6d87f2da.css.map": "/static/css/main.6d87f2da.css.map",
+    "main.d9930da1.js.map": "/static/js/main.d9930da1.js.map",
+    "787.7972dc65.chunk.js.map": "/static/js/787.7972dc65.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d87f2da.css",
+    "static/js/main.d9930da1.js"
+  ]
+}
