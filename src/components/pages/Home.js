@@ -1,8 +1,8 @@
 import React from "react";
 export default function Home() {
   return (
-    <div className="d-flex flex-row flex-wrap align-items-center">
-      <div>
+    <div className="d-flex align-items-center row">
+      <div className="col-md-6 d-flex justify-content-center p-0">
         <img
           src={require(`../../images/carl.png`)}
           alt="Carl Santiago"
@@ -10,8 +10,8 @@ export default function Home() {
           className=""
         />
       </div>
-      <div className="about p-0">
-        <p>
+      <div className="about col-md-6 p-0">
+        <p className="p-0 text-center">
           Hello there!
           <br />
           Welcome to my portfolio! <br />

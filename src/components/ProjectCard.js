@@ -2,55 +2,76 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  MDBCarousel,
+  MDBCarouselInner,
+  MDBCarouselItem,
+  MDBCarouselElement,
+  MDBCarouselCaption,
+} from "mdb-react-ui-kit";
 
 function ProjectCard({ projects }) {
   return (
-    <div className="d-flex flex-row flex-wrap vw-100 justify-content-center">
-      {projects.map((project) => (
-        <div className="card border-white text-white bg-dark bg-gradient text-center asd mx-2">
-          <img
-            src={require(`../images/${project.title}.png`)}
-            alt={project.title}
-            className="card-img"
+    <MDBCarousel showControls showIndicators fade>
+      <MDBCarouselInner>
+        <MDBCarouselItem className="active">
+          <MDBCarouselElement
+            src={require(`../images/${projects[0].title}.png`)}
+            alt={projects[0].title}
+            className="projectImg"
           />
-          <div className="card-body">
-            <h5 className="card-title">{project.title}</h5>
-            <p className="card-text">{project.description}</p>
-            <p className="card-text">
-              <small className="text-muted">{project.techUsed}</small>
-            </p>
-          </div>
-          <div className="d-flex card-footer align-items-center justify-content-center">
-            <a
-              href={project.github}
-              className="card-link"
-              target="_blank"
-              rel="noreferrer"
-            >
+          <MDBCarouselCaption>
+            <h5 className="text-light">{projects[0].title}</h5>
+            <p className="text-light">{projects[0].description}</p>
+            <a href={projects[0].github} target="_blank" rel="noreferrer">
               <button
                 type="button"
-                className="btn btn-sm btn-outline-secondary rounded-pill"
+                class="btn btn-sm btn-outline-light rounded-pill"
               >
-                <FontAwesomeIcon icon={faGithub} size="lg" />
+                <FontAwesomeIcon icon={faGithub} id="icon" />
               </button>
             </a>
-            <a
-              href={project.deploy}
-              className="card-link"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={projects[0].deploy} target="_blank" rel="noreferrer">
               <button
-                className="btn  btn-sm btn-outline-secondary rounded-pill"
                 type="button"
+                class="btn btn-sm btn-outline-light rounded-pill"
               >
-                <FontAwesomeIcon icon={faExternalLinkAlt} size="lg" />
+                <FontAwesomeIcon icon={faExternalLinkAlt} id="icon" />
               </button>
             </a>
-          </div>
-        </div>
-      ))}
-    </div>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+        {projects.slice(1).map((project) => (
+          <MDBCarouselItem>
+            <MDBCarouselElement
+              src={require(`../images/${project.title}.png`)}
+              alt={project.title}
+              className="projectImg"
+            />
+            <MDBCarouselCaption>
+              <h5 className="text-light">{project.title}</h5>
+              <p className="text-light">{project.description}</p>
+              <a href={project.github} target="_blank" rel="noreferrer">
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline-light rounded-pill"
+                >
+                  <FontAwesomeIcon icon={faGithub} id="icon" />
+                </button>
+              </a>
+              <a href={project.deploy} target="_blank" rel="noreferrer">
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline-light rounded-pill"
+                >
+                  <FontAwesomeIcon icon={faExternalLinkAlt} id="icon" />
+                </button>
+              </a>
+            </MDBCarouselCaption>
+          </MDBCarouselItem>
+        ))}
+      </MDBCarouselInner>
+    </MDBCarousel>
   );
 }
 

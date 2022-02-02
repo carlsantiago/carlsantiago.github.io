@@ -1,47 +1,64 @@
 import React from "react";
+import { Nav, Navbar } from "react-bootstrap";
 
 function Buttons({ currentPage, handlePageChange }) {
   return (
-    <div className="position-absolute bottom-0 start-50 translate-middle-x">
-      <div className="my-5 d-flex justify-content-between">
-        <a href="#home" onClick={() => handlePageChange("Home")}>
-          <button
-            type="button"
-            className="btn btn-outline-light rounded-pill"
-            id="about"
-          >
-            About
-          </button>
-        </a>
-        <a href="#projects" onClick={() => handlePageChange("Projects")}>
-          <button
-            type="button"
-            className="btn btn-outline-light rounded-pill"
-            id="projects"
-          >
-            Projects
-          </button>
-        </a>
-        <a href="#skills" onClick={() => handlePageChange("Skills")}>
-          <button
-            type="button"
-            className="btn btn-outline-light rounded-pill"
-            id="skills"
-          >
-            Skills
-          </button>
-        </a>
-        <a href="#contact" onClick={() => handlePageChange("Contact")}>
-          <button
-            type="button"
-            className="btn btn-outline-light rounded-pill"
-            id="contact"
-          >
-            Contact
-          </button>
-        </a>
-      </div>
-    </div>
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      variant="dark"
+      className="fixed-bottom justify-content-center navBtn"
+    >
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto container d-flex justify-content-center">
+          <Nav.Item>
+            <a href="#home" onClick={() => handlePageChange("Home")}>
+              <button
+                type="button"
+                className="btn btn-outline-light rounded-pill"
+                id="about"
+              >
+                About
+              </button>
+            </a>
+          </Nav.Item>
+          <Nav.Item>
+            <a href="#projects" onClick={() => handlePageChange("Projects")}>
+              <button
+                type="button"
+                className="btn btn-outline-light rounded-pill"
+                id="projects"
+              >
+                Projects
+              </button>
+            </a>
+          </Nav.Item>
+          <Nav.Item>
+            <a href="#skills" onClick={() => handlePageChange("Skills")}>
+              <button
+                type="button"
+                className="btn btn-outline-light rounded-pill"
+                id="skills"
+              >
+                Skills
+              </button>
+            </a>
+          </Nav.Item>
+          <Nav.Item>
+            <a href="#contact" onClick={() => handlePageChange("Contact")}>
+              <button
+                type="button"
+                className="btn btn-outline-light rounded-pill"
+                id="contact"
+              >
+                Contact
+              </button>
+            </a>
+          </Nav.Item>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
